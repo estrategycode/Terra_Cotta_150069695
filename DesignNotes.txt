@@ -1,0 +1,8 @@
+This is a splash page with a slideshow.
+
+Colors
+background: 782D13
+Buttons: 137862
+Rollover: C45833
+
+text: Trajan Pro Bold with 400% tracking for client name
