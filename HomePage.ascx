@@ -9,39 +9,7 @@
 <%@ register tagname="RequestInfo" tagprefix="uc1" src="~/eNPropertySearch/CustomControls/BrandControls/EN/Requestinfo.ascx"  %>
 <%@ Register tagname="LocalAreaPropertySearch_EN" tagprefix="uc1" src="~/eNPropertySearch/CustomControls/LocalAreaPropertySearch_EN.ascx"  %>
 <%@ Register TagPrefix="cc1"  TagName="SearchMaster"  Src="~/eNPropertySearch/CustomControls/GenericControls/SearchMaster.ascx" %>
-  <style type="text/css">
-   body #container > #body{background:none !important; color:#000;}
 
-#testimonials {
-width:940px;
-background:#137862 url() left top repeat-x;
-margin:10px 0; 
-}
-#testimonials blockquote{
-padding:3px;
-width:940px !important;
-color:#fff;
-display:block;
-}
- 
-#testimonials blockquote p{
-margin: 0 !important;padding: 5px!important;
- 
-}
-#testimonials blockquote cite {
-font-style: normal;
-display: block; 
-text-transform: uppercase;
-font-weight: bold;
-font-style:italic;
-color: #fff;
-padding-left:5px;
-margin-top:10px;
-}
-#testimonialsfullbox{border:1px solid #ccc; padding:6px; margin-bottom:8px; margin-top:8px; background-color:#137862;}
-#nav a{margin:2px; color:white;}
-#testimonialheader{font-size:24px; color:#fff;}
-  </style>
  <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script> 
 
  <script type="text/javascript"> 
@@ -63,12 +31,22 @@ margin-top:10px;
  <div id="splashContent">
       
       	<div class="slideshow">
-         <img src="/CustomData/150069695/images/slide1.jpg" />
-         <img src="/CustomData/150069695/images/slide2.jpg" />
-         <img src="/CustomData/150069695/images/slide3.jpg" />
-         <img src="/CustomData/150069695/images/slide4.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide1.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide2.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide3.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide4.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide5.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide6.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide7.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide8.jpg" />
+         <img src="/CustomData/150080741/images/slides/slide9.jpg" />
         </div>
-        
+  <div class="impulseButtons">
+  	<a href="/search/ResidentialAdvancedSearch.aspx" class="button1"><div class="imagebox"></div><h1 class="Title">Property Search</h1><div class="description"><p>An advanced search tool enabling you to find the right home at the right price.</p></div></a>
+	<a href="/sellers/default.aspx" class="button2"><div class="imagebox"></div><h1 class="Title">Mortgage Info</h1><div class="description"><p>Purchasing a new home is the most important decision you'll ever make. Mortgages help make that decision a reality.</p></div></a>
+	<a href="/aboutus/Endorsements.aspx" class="button3"><div class="imagebox"></div><h1 class="Title">Home Owners</h1><div class="description"><p>Your home is much more than an investment, it's a lifetime of memories. I can help ensure they are taken care of.</p></div></a>
+	<a href="/aboutus/default.aspx" class="button4"><div class="imagebox"></div><h1 class="Title">About Me</h1><div class="description"><p>Who you choose to help you find and sell your home is as important as the property itself. See why I'm right for you.</p></div></a>
+  </div>        
         
       </div><!-- /splashContent -->
 
@@ -86,12 +64,7 @@ margin-top:10px;
                 <cite>&ndash;Jason - MA</cite></p></blockquote>
  
 </div></div>
-      <div class="impulseButtons">
- <a href="/search/ResidentialAdvancedSearch.aspx"><img src="/CustomData/150069695/images/impulse1.png" border="0" /></a>
- <a href="/sellers/default.aspx"><img src="/CustomData/150069695/images/impulse2.png" border="0" /></a>
- <a href="/aboutus/Endorsements.aspx"><img src="/CustomData/150069695/images/impulse3.png" border="0" /></a>
- <a href="/aboutus/default.aspx"><img src="/CustomData/150069695/images/impulse4.png" border="0" /></a>
-</div>
+
 	<%-- <uc1:SimpleSearch id="SimpleSearch_uc" runat="server" />--%>
 	<cc1:SearchMaster ID="mySearchMaster_uc"  runat="server" visible="true" />
    
