@@ -49,12 +49,12 @@ html, html body, h1, h2, h3, h4, h5, h6, p, a, .a-i, label, span, fieldset, .mod
 
 	/* ~~~~~ Body Background ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-header .pos {
+header .pos {z-index:3;
 	position:relative; /*Necessary for positioning of all header elements */
 	top:5px;
 	text-align:center;
 }
-footer .pos {background: rgba(246, 246, 246, 0.85);}
+footer .pos {position:relative; z-index:3; background: rgb(246, 246, 246); background: rgba(246, 246, 246, 0.85);}
 footer .pos .pos {background:none;} /* Fixes double-layering of transparent background */
 /* ======================================================= */
 /* ===       Background image and vignette effect      === */
@@ -67,14 +67,14 @@ footer .pos .pos {background:none;} /* Fixes double-layering of transparent back
 }
 .bgimage img {
 	position:relative;
-	z-index:-1;
+	z-index:1;
 	width:100%; /*Adjusts image size according to resolution */
 	-webkit-border-radius: 0 0 10% 10%;
 	-moz-border-radius: 0 0 10% 10%;
 	border-radius: 0 0 10% 10%;
 }
 /* Hack for box-shadow on image */
-.bgimage .shadow {
+.bgimage .shadow {z-index:2
 	-moz-box-shadow: inset 0 0 15px 15px #783013;
 	-webkit-box-shadow: inset 0 0 15px 15px #783013;
 	box-shadow: inset 0 -15px 15px 15px #783013;
@@ -86,6 +86,7 @@ footer .pos .pos {background:none;} /* Fixes double-layering of transparent back
 	-moz-border-radius: 0 0 8% 8%;
 	border-radius: 0 0 8% 8%;
 }
+#body {z-index:3; position:relative;}
 html {background:#783013;} /* Corrects the issue of white space at bottom of our pages */
 .nav_main {
 	background: rgb(12,76,62); /* Old browsers */
@@ -344,7 +345,7 @@ div.a-i{color:#03120F !important;}
 	*/
 
 		 #container > header {	}
-		 #container > header > .pos{
+		 #container > header > .pos{position:relative; z-index:3;
 		  background: rgba(246, 246, 246, 0.85);
 		  height:200px; 
 		 }
@@ -393,7 +394,7 @@ div.a-i{color:#03120F !important;}
 			body #container > #nav_main > .nav_main > ul > li.ui-menu-item > a,
 			body #container > #nav_main > .nav_main > ul > li.ui-menu-item > a:link,
 			body #container > #nav_main > .nav_main > ul > li.ui-menu-item > a:visited
-			{font-size:18px; 
+			{font-size:18px;  position:relative; z-index:3;
 background: rgb(12,76,62); /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBjNGMzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzE2OGU3NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMzc4NjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -1066,7 +1067,7 @@ body #container > #body{
 }
 /* Pop up image box */
 .impulseButtons .imagebox {
-	background:url(/CustomData/150080741/images/impulse.jpg) no-repeat; /* This sets the sprite to all impulse buttons */
+	background:url(/CustomData/150069695/images/impulse.jpg) no-repeat; /* This sets the sprite to all impulse buttons */
 	width:210px;
 	height:0px;
 	top:0;
