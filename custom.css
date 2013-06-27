@@ -381,6 +381,7 @@ div.a-i{color:#03120F !important;}
 			margin:0px auto 0px;
 
 			}
+			 #nav_main {position:relative; z-index:999;}
 			body #container > #nav_main > .nav_main{}
 			body #container > #nav_main > .nav_main > ul{}
 
